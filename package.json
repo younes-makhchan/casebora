@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prisma:migrate": "prisma migrate deploy",       // Command to apply migrations
-    "prisma:generate": "prisma generate",            // Command to generate Prisma Client
-    "postinstall": "prisma generate",                // Automatically generate Prisma Client after every install
-    "netlify-build": "pnpm run build && pnpm run prisma:migrate && pnpm run prisma:generate" // Custom script for Netlify
+    "prisma:migrate": "prisma migrate deploy",      
+    "prisma:generate": "prisma generate",          
+    "postinstall": "prisma generate",              
+    "netlify-build": "pnpm run build && pnpm run prisma:migrate && pnpm run prisma:generate"
    },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
