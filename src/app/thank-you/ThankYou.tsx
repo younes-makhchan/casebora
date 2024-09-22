@@ -69,9 +69,9 @@ const ThankYou = () => {
               You made a great choice!
             </h4>
             <p className='mt-2 text-sm text-zinc-600'>
-              We at CaseCobra believe that a phone case doesn't only need to
+              We at CupKitten believe that a Cup doesn't only need to
               look good, but also last you for the years to come. We offer a
-              5-year print guarantee: If you case isn't of the highest quality,
+              5-year print guarantee: If your Cup isn't of the highest quality,
               we'll replace it for free.
             </p>
           </div>

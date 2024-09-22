@@ -16,8 +16,8 @@ export const formatPrice = (price: number) => {
 }
 
 export function constructMetadata({
-  title = 'CaseCobra - custom high-quality phone cases',
-  description = 'Create custom high-quality phone cases in seconds',
+  title = 'CupKitten - custom high-quality Cup ',
+  description = 'Create custom high-quality Cup in seconds',
   image = '/thumbnail.png',
   icons = '/favicon.ico',
 }: {
@@ -42,6 +42,6 @@ export function constructMetadata({
       creator: '@joshtriedcoding',
     },
     icons,
-    metadataBase: new URL("https://casecobra.vercel.app/")
+    metadataBase: new URL("https://cupkitten.makhchan.tech/")
   }
 }
