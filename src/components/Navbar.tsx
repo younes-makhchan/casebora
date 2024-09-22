@@ -24,15 +24,15 @@ const Navbar = async () => {
           <div className='h-full flex items-center space-x-4'>
             {user ? (
               <>
-                <Button
+                <button
                   id="logout"
-                  onClick={() => logOutFunction()}
+                  onClick={logOutFunction}
                   className={buttonVariants({
                     size: 'sm',
                     variant: 'ghost',
                   })}>
                   Log out
-                </Button>
+                </button>
                 {isAdmin ? (
                   <Link
                     href='/dashboard'
