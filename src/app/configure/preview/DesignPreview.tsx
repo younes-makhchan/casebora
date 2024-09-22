@@ -22,7 +22,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
   const { id } = configuration
   const { user } = useKindeBrowserClient()
   const [isLoginModalOpen, setIsLoginModalOpen] = useState<boolean>(false)
-
+  const [isCheckingOut, setIsCheckingOut] = useState<boolean>(false)
   const [showConfetti, setShowConfetti] = useState<boolean>(false)
   useEffect(() => setShowConfetti(true))
 
@@ -43,10 +43,12 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
     mutationKey: ['get-checkout-session'],
     mutationFn: createCheckoutSession,
     onSuccess: ({ url }) => {
+      setIsCheckingOut(false)
       if (url) router.push(url)
       else throw new Error('Unable to retrieve payment URL.')
     },
     onError: () => {
+      setIsCheckingOut(false)
       toast({
         title: 'Something went wrong',
         description: 'There was an error on our end. Please try again.',
@@ -58,6 +60,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
   const handleCheckout = () => {
     if (user) {
       // create payment session
+      setIsCheckingOut(true)
       createPaymentSession({ configId: id })
     } else {
       // need to log in
@@ -102,8 +105,8 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
             <div>
               <p className='font-medium text-zinc-950'>Highlights</p>
               <ol className='mt-3 text-zinc-700 list-disc list-inside'>
-                <li>Wireless charging compatible</li>
-                <li>TPU shock absorption</li>
+                <li>Dishwasher safe</li>
+                <li>Double-wall insulation</li>
                 <li>Packaging made from recycled materials</li>
                 <li>5 year print warranty</li>
               </ol>
@@ -159,7 +162,9 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
             <div className='mt-8 flex justify-end pb-12'>
               <Button
                 onClick={() => handleCheckout()}
-                className='px-4 sm:px-6 lg:px-8'>
+                className='px-4 sm:px-6 lg:px-8 '
+                disabled={isCheckingOut}
+                >
                 Check out <ArrowRight className='h-4 w-4 ml-1.5 inline' />
               </Button>
             </div>
