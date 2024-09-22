@@ -4,6 +4,7 @@ import { db } from '@/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 
 export const getAuthStatus = async () => {
+  console.log("auth callback !!!!!!!!!!!!!!")
   const { getUser } = getKindeServerSession()
   const user = await getUser()
 
