@@ -1,9 +1,9 @@
 // components/SignOutButton.js
 'use client';
-
+import { buttonVariants } from './button'
 import React from 'react';
 
-const SignOutButton = ({ buttonVariants }) => {
+const SignOutButton = () => {
   const handleSignOut = () => {
     window.location.href = '/api/auth/logout';
   };

@@ -21,13 +21,12 @@ export default function Home() {
               <h1 className='relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl'>
                 Your Image on a{' '}
                 <span className='bg-green-600 px-2 text-white'>Custom</span>{' '}
-                Phone Case
+                Cup
               </h1>
               <p className='mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap'>
-                Capture your favorite memories with your own,{' '}
-                <span className='font-semibold'>one-of-one</span> phone case.
-                CaseCobra allows you to protect your memories, not just your
-                phone case.
+                Drink your favorite drink with your own,{' '}
+                <span className='font-semibold'>one-of-one</span> cup.
+                Cup Kitten allows you to remeber your memories, while you drinking your favorite drink
               </p>
 
               <ul className='mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start'>
@@ -42,7 +41,7 @@ export default function Home() {
                   </li>
                   <li className='flex gap-1.5 items-center text-left'>
                     <Check className='h-5 w-5 shrink-0 text-green-600' />
-                    Modern iPhone models supported
+                    Modern Cup Design
                   </li>
                 </div>
               </ul>
@@ -135,12 +134,12 @@ export default function Home() {
               </div>
               <div className='text-lg leading-8'>
                 <p>
-                  "The case feels durable and I even got a compliment on the
-                  design. Had the case for two and a half months now and{' '}
+                  "The Cup feels durable and I even got a compliment on the
+                  design. Had the Cup for two and a half months now and{' '}
                   <span className='p-0.5 bg-slate-800 text-white'>
                     the image is super clear
                   </span>
-                  , on the case I had before, the image started fading into
+                  , on the Cup I had before, the image started fading into
                   yellow-ish color after a couple weeks. Love it."
                 </p>
               </div>
@@ -171,9 +170,9 @@ export default function Home() {
               </div>
               <div className='text-lg leading-8'>
                 <p>
-                  "I usually keep my phone together with my keys in my pocket
+                  "I usually keep my Cup together with me  in my work
                   and that led to some pretty heavy scratchmarks on all of my
-                  last phone cases. This one, besides a barely noticeable
+                  last Cups . This one, besides a barely noticeable
                   scratch on the corner,{' '}
                   <span className='p-0.5 bg-slate-800 text-white'>
                     looks brand new after about half a year
@@ -211,7 +210,7 @@ export default function Home() {
               <h2 className='order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900'>
                 Upload your photo and get{' '}
                 <span className='relative px-2 bg-green-600 text-white'>
-                  your own case
+                  your own Cup
                 </span>{' '}
                 now
               </h2>
@@ -239,7 +238,7 @@ export default function Home() {
           <ul className='mx-auto mt-12 max-w-prose sm:text-lg space-y-2 w-fit'>
             <li className='w-fit'>
               <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
-              High-quality silicone material
+              High-quality Cup material
             </li>
             <li className='w-fit'>
               <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
