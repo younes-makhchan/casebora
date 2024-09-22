@@ -58,6 +58,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
   const handleCheckout = () => {
     if (user) {
       // create payment session
+      console.log("handing checkpoint  ",id)
       createPaymentSession({ configId: id })
     } else {
       // need to log in

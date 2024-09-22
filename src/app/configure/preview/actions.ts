@@ -11,6 +11,7 @@ export const createCheckoutSession = async ({
 }: {
   configId: string
 }) => {
+  console.log("searching ")
   const configuration = await db.configuration.findUnique({
     where: { id: configId },
   })
@@ -34,7 +35,7 @@ export const createCheckoutSession = async ({
     price += PRODUCT_PRICES.material.polycarbonate
 
   let order: Order | undefined = undefined
-
+  console.log("we are here")
   const existingOrder = await db.order.findFirst({
     where: {
       userId: user.id,
