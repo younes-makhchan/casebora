@@ -74,6 +74,7 @@ export const createCheckoutSession = async ({
       wechat_pay: {
         client: 'web',
       },
+    },
     mode: 'payment',
     shipping_address_collection: { allowed_countries: ['DE', 'US'] },
     metadata: {
